@@ -57,12 +57,12 @@ class NewPost extends Component {
 					</div>
 					<Field label="Type your dookie!" name="content" type="textarea" component={this.renderField} />
 					<div className="col-md-6">
-						<button type="submit" className=" btn-danger edit-btn leftbtn container-fluid">
+						<button type="submit" className="btn-danger edit-btn leftbtn container-fluid">
 							<i className="fa fa-floppy-o fa-3x" aria-hidden="true" />
 						</button>
 					</div>
 					<div className="col-md-6">
-						<Link className="btn-danger edit-btn rightbtn container-fluid" to="/">
+						<Link className="btn-danger edit-btn rightbtn container-fluid" to="/posts">
 							<i className="fa fa-arrow-left fa-3x" aria-hidden="true" />
 						</Link>
 					</div>

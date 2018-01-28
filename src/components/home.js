@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { FetchPosts } from '../actions';
 import { Link } from 'react-router-dom';
 import Modal from 'react-responsive-modal';
 
@@ -17,32 +15,21 @@ class Home extends Component {
 		this.setState({ open: false });
 	};
 
-	componentDidMount() {
-		this.props.FetchPosts();
-	}
-
-	renderHome() {
-		const posts = this.props.post;
-
-		return Object.keys(posts).map((id) => {
-			const post = posts[id];
-			return (
-				<Link to={`/posts/${post.id}`} key={post.id}>
-					<li className="btn btn-danger list-group-item blogpost container-fluid" key={id}>
-						<div className="titlefont">{post.title}</div>
-					</li>
-				</Link>
-			);
-		});
-	}
-
 	render() {
 		const { open } = this.state;
 		return (
 			<div>
 				<div>
+					<Link to="/">
+						{' '}
+						<img
+							className="logohome img-fluid"
+							src="https://data.whicdn.com/images/97429737/original.png"
+							alt="dokie"
+						/>
+					</Link>
 					<button className=" btn-danger edit-btn container-fluid" onClick={this.onOpenModal}>
-						<i className="fa fa-pencil fa-3x" aria-hidden="true" />
+						<i className="fa fa-cog fa-3x" aria-hidden="true" />
 					</button>
 					<Modal
 						open={open}
@@ -52,21 +39,15 @@ class Home extends Component {
 					>
 						<h2>What you want to do</h2>
 						<div className="text-xs-left">
-							<Link className="btn btn-danger ctn-btn" to="/posts/new">
-								Add Post
+							<Link className="btn btn-danger ctn-btn" to="/posts">
+								View Posts
 							</Link>
 						</div>
 					</Modal>
 				</div>
-
-				<ul className="list-group brown">{this.renderHome()}</ul>
 			</div>
 		);
 	}
 }
 
-function mapstate2props(state) {
-	return { post: state.post };
-}
-
-export default connect(mapstate2props, { FetchPosts })(Home);
+export default Home;

@@ -29,7 +29,7 @@ class PostShow extends Component {
 				<div className="cont">
 					<h3 className="titlefont">{post.title}</h3>
 					<p>Categories: {post.categories}</p>
-					<p>{post.content}</p>
+					<p className="font-para">{post.content}</p>
 				</div>
 				<div className="col-md-6">
 					<button
@@ -40,7 +40,7 @@ class PostShow extends Component {
 					</button>
 				</div>
 				<div className="col-md-6">
-					<Link className="btn-danger edit-btn rightbtn container-fluid" to="/">
+					<Link className="btn-danger edit-btn rightbtn container-fluid" to="/posts">
 						<i className="fa fa-arrow-left fa-3x" aria-hidden="true" />
 					</Link>
 				</div>
