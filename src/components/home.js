@@ -28,9 +28,23 @@ class Home extends Component {
 							alt="dokie"
 						/>
 					</Link>
-					<button className=" btn-danger edit-btn container-fluid" onClick={this.onOpenModal}>
-						<i className="fa fa-cog fa-3x" aria-hidden="true" />
-					</button>
+					<div className="row">
+						<div className="col-lg-2">
+							<button className=" btn-danger edit-btn container-fluid" onClick={this.onOpenModal}>
+								<i className="fa fa-cog fa-3x" aria-hidden="true" />
+							</button>
+						</div>
+						<div className="col-lg-6 newpostfont cont">
+							<h1>Site Underconstruction hide your DOOKIE</h1>
+						</div>
+					</div>
+					<img
+						className="img-fluid logohome"
+						width="350"
+						src="https://i.pinimg.com/736x/38/04/c7/3804c7dfc4a1a06cfa94351001344c97--monkey-art-monkey-business.jpg"
+						alt="monkeybiz"
+					/>
+
 					<Modal
 						open={open}
 						onClose={this.onCloseModal}

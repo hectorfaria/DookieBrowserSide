@@ -22,11 +22,15 @@ ReactDOM.render(
 					<Link to="/">
 						{' '}
 						<img
-							src="https://www.spreadshirt.co.uk/image-server/v1/mp/designs/119633919,width=178,height=178/happy-rainbow-poop.png"
-							width="30"
-							height="30"
+							src="http://pichoster.net/images/2018/01/28/8c9bff58c67936222655ad05e86661f8.png"
+							width="50"
+							height="50"
 							alt=""
 						/>
+					</Link>
+
+					<Link to="/posts" className="links nav-link">
+						Posts
 					</Link>
 				</nav>
 				<Switch>

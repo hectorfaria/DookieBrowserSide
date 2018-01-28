@@ -35,7 +35,7 @@ class NewPost extends Component {
 
 	onSubmit(values) {
 		this.props.CreatePosts(values, () => {
-			this.props.history.push('/');
+			this.props.history.push('/posts');
 		});
 	}
 
@@ -44,7 +44,7 @@ class NewPost extends Component {
 		return (
 			<div>
 				<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-					<div className="row">
+					<div className="row modalfix">
 						<div className="col-md-1" />
 						<div className="col-md-5 contnewpage">
 							<Field label="Title" name="title" type="input" component={this.renderField} />

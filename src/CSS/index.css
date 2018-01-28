@@ -9,12 +9,32 @@ body {
 .modalfix {
   padding-top: 70px; }
 
+.nbstyle {
+  background-color: transparent;
+  color: transparent; }
+  .nbstyle:hover {
+    background-color: brown;
+    color: white; }
+    .nbstyle:hover .links {
+      color: white !important; }
+
+.links {
+  margin-left: 15px;
+  color: transparent;
+  text-decoration: none;
+  font-size: 1.9vw;
+  font-family: "Love Ya Like A Sister", cursive; }
+  .links a:visited {
+    color: white; }
+
 .brown {
   margin: 50px; }
 
 .logohome {
   display: block;
-  margin: auto; }
+  margin: auto;
+  margin-top: 5%;
+  margin-bottom: 2%; }
 
 .titlefont {
   font-size: 3.1vw;
@@ -51,7 +71,7 @@ body {
 .custom-overlay {
   color: brown;
   width: 30%;
-  margin-top: 25px; }
+  margin-top: 4%; }
 
 .custom-modal {
   font-family: "Love Ya Like A Sister", cursive; }
@@ -68,7 +88,7 @@ a:hover {
   margin: 3%;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 5%; }
+  margin-top: 6%; }
 
 .inputstyle {
   border-radius: 12px; }
