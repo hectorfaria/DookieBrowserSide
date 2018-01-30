@@ -36,12 +36,12 @@ class PostShow extends Component {
 						className=" btn-danger edit-btn leftbtn container-fluid"
 						onClick={this.onDeleteClick.bind(this)}
 					>
-						<i className="fa fa-trash-o fa-3x" aria-hidden="true" />
+						<i className="fa fa-trash-o fa-2x" aria-hidden="true" />
 					</button>
 				</div>
 				<div className="col-md-6">
 					<Link className="btn-danger edit-btn rightbtn container-fluid" to="/posts">
-						<i className="fa fa-arrow-left fa-3x" aria-hidden="true" />
+						<i className="fa fa-arrow-left fa-2x" aria-hidden="true" />
 					</Link>
 				</div>
 			</div>

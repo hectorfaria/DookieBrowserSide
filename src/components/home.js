@@ -21,23 +21,22 @@ class Home extends Component {
 			<div>
 				<div>
 					<Link to="/">
-						{' '}
-						<img
-							className="logohome img-fluid"
-							src="https://data.whicdn.com/images/97429737/original.png"
-							alt="dokie"
-						/>
+						<div className="jumbotron jumbotron-fluid">
+							<img
+								className="logohomemain img-fluid"
+								src="https://data.whicdn.com/images/97429737/original.png"
+								alt="dokie"
+							/>
+						</div>
 					</Link>
-					<div className="row">
-						<div className="col-lg-2">
-							<button className=" btn-danger edit-btn container-fluid" onClick={this.onOpenModal}>
-								<i className="fa fa-cog fa-3x" aria-hidden="true" />
-							</button>
-						</div>
-						<div className="col-lg-6 newpostfont cont">
-							<h1>Site Underconstruction hide your DOOKIE</h1>
-						</div>
-					</div>
+
+
+					<button className=" btn-danger edit-btn container-fluid" onClick={this.onOpenModal}>
+						<i className="fa fa-cog fa-2x" aria-hidden="true" />
+					</button>
+
+
+
 					<img
 						className="img-fluid logohome"
 						width="350"

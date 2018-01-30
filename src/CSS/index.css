@@ -1,5 +1,5 @@
 body {
-  background: url("https://wallpapercave.com/wp/q3UXNIR.jpg");
+  background: url("https://cdn-images-1.medium.com/max/1600/0*k0ZNdPy2ihWKSiOI.");
   padding: 0;
   font-family: sans-serif;
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@ body {
   background-color: transparent;
   color: transparent; }
   .nbstyle:hover {
-    background-color: brown;
+    background-color: #960707;
     color: white; }
     .nbstyle:hover .links {
       color: white !important; }
@@ -22,10 +22,32 @@ body {
   margin-left: 15px;
   color: transparent;
   text-decoration: none;
-  font-size: 1.9vw;
   font-family: "Love Ya Like A Sister", cursive; }
   .links a:visited {
     color: white; }
+
+.logohomemain {
+  display: block;
+  margin: auto; }
+
+.jumbotron {
+  background-color: transparent;
+  padding-top: 9%; }
+
+@media (min-width: 576px) {
+  html {
+    font-size: 22px; }
+
+  h2 {
+    font-size: 22px; } }
+@media (min-width: 768px) {
+  html {
+    font-size: 24px; }
+
+  h2 {
+    font-size: 24px; } }
+h2 {
+  font-size: 30px; }
 
 .brown {
   margin: 50px; }
@@ -37,7 +59,6 @@ body {
   margin-bottom: 2%; }
 
 .titlefont {
-  font-size: 3.1vw;
   font-family: "Love Ya Like A Sister", cursive; }
 
 .blogpost {
@@ -49,9 +70,6 @@ body {
   margin-right: 15%;
   padding: auto; }
 
-.custom-modal {
-  font-family: "Love Ya Like A Sister", cursive; }
-
 .ctn-btn {
   display: block;
   margin: auto;
@@ -61,20 +79,31 @@ body {
   background-color: brown;
   padding: 25px;
   margin: 25px;
-  margin-top: 70px;
+  border-radius: 50%;
+  border-width: 2px;
+  border-color: white;
+  color: white; }
+
+.listp .edit-btn {
+  background-color: brown;
+  padding: 25px;
+  margin: 25px;
   border-radius: 50%;
   border-width: 2px;
   border-color: white;
   color: white;
-  font-size: 0.8vw; }
+  margin-top: 80px; }
 
 .custom-overlay {
   color: brown;
-  width: 30%;
-  margin-top: 4%; }
+  width: 30%; }
+  @media (max-width: 576px) {
+    .custom-overlay {
+      width: 60%; } }
 
 .custom-modal {
-  font-family: "Love Ya Like A Sister", cursive; }
+  font-family: "Love Ya Like A Sister", cursive;
+  margin-top: 17%; }
 
 a:hover {
   text-decoration: none; }
@@ -88,13 +117,15 @@ a:hover {
   margin: 3%;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 6%; }
+  margin-top: 18%; }
+  @media (min-width: 576px) {
+    .cont {
+      margin-top: 7%; } }
 
 .inputstyle {
   border-radius: 12px; }
 
 .newpostfont {
-  font-size: 2.1vw;
   font-family: "Love Ya Like A Sister", cursive; }
 
 .input-lg {
@@ -125,7 +156,6 @@ a:hover {
   width: 95%; }
 
 .font-para {
-  font-family: "Quicksand", cursive;
-  font-size: 2rem; }
+  font-family: "Quicksand", cursive; }
 
 /*# sourceMappingURL=index.css.map */

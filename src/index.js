@@ -19,12 +19,12 @@ ReactDOM.render(
 		<BrowserRouter>
 			<div>
 				<nav className="navbar nbstyle navbar-fixed-top navbar-light bg-inverse">
+
 					<Link to="/">
-						{' '}
+
 						<img
-							src="http://pichoster.net/images/2018/01/28/8c9bff58c67936222655ad05e86661f8.png"
-							width="50"
-							height="50"
+
+							src="https://i.imgur.com/Ll3BaXB.png"
 							alt=""
 						/>
 					</Link>
@@ -32,6 +32,7 @@ ReactDOM.render(
 					<Link to="/posts" className="links nav-link">
 						Posts
 					</Link>
+
 				</nav>
 				<Switch>
 					<Route path="/posts/new" component={NewPost} />
@@ -41,7 +42,7 @@ ReactDOM.render(
 				</Switch>
 			</div>
 		</BrowserRouter>
-	</Provider>,
+	</Provider >,
 	document.getElementById('root'),
 );
 registerServiceWorker();

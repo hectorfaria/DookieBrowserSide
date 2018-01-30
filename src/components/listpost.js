@@ -40,9 +40,9 @@ class ListPosts extends Component {
 		const { open } = this.state;
 		return (
 			<div>
-				<div>
-					<button className=" btn-danger edit-btn container-fluid" onClick={this.onOpenModal}>
-						<i className="fa fa-pencil fa-3x" aria-hidden="true" />
+				<div className="listp">
+					<button className=" btn-danger edit-btn listsp container-fluid" onClick={this.onOpenModal}>
+						<i className="fa fa-pencil fa-2x" aria-hidden="true" />
 					</button>
 					<Modal
 						open={open}
