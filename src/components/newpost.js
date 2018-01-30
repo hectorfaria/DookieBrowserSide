@@ -4,6 +4,7 @@ import { Field, reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { CreatePosts } from '../actions';
+import { Helmet } from 'react-helmet';
 
 const FIELDS = {
 	title: { type: 'input', label: 'Enter some title' },
@@ -43,6 +44,9 @@ class NewPost extends Component {
 		const { handleSubmit } = this.props;
 		return (
 			<div>
+				<Helmet>
+					<style>{'body { background: url("https://cdn-images-1.medium.com/max/2000/1*7v_75ZGg1CTmWAw1rEgMHQ.jpeg"); }'}</style>
+				</Helmet>
 				<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
 					<div className="row modalfix">
 						<div className="col-md-1" />

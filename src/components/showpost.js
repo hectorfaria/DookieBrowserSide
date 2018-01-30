@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FetchPosts2, deletePost } from '../actions';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
 class PostShow extends Component {
 	componentDidMount() {
@@ -25,7 +26,11 @@ class PostShow extends Component {
 		}
 
 		return (
+
 			<div>
+				<Helmet>
+					<style>{'body { background: url("https://cdn-images-1.medium.com/max/2000/1*7v_75ZGg1CTmWAw1rEgMHQ.jpeg"); }'}</style>
+				</Helmet>
 				<div className="cont">
 					<h3 className="titlefont">{post.title}</h3>
 					<p>Categories: {post.categories}</p>

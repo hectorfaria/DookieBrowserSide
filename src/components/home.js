@@ -18,6 +18,8 @@ class Home extends Component {
 	render() {
 		const { open } = this.state;
 		return (
+
+
 			<div>
 				<div>
 					<Link to="/">

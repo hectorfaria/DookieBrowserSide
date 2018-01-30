@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import { FetchPosts } from '../actions';
 import { Link } from 'react-router-dom';
 import Modal from 'react-responsive-modal';
+import { Helmet } from 'react-helmet';
 
 class ListPosts extends Component {
 	state = {
@@ -40,6 +41,9 @@ class ListPosts extends Component {
 		const { open } = this.state;
 		return (
 			<div>
+				<Helmet>
+					<style>{'body { background: url("https://cdn-images-1.medium.com/max/2000/1*7v_75ZGg1CTmWAw1rEgMHQ.jpeg"); }'}</style>
+				</Helmet>
 				<div className="listp">
 					<button className=" btn-danger edit-btn listsp container-fluid" onClick={this.onOpenModal}>
 						<i className="fa fa-pencil fa-2x" aria-hidden="true" />
