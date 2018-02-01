@@ -31,7 +31,8 @@ body {
 
 .jumbotron {
   background-color: transparent;
-  padding-top: 9%; }
+  padding-top: 9%;
+  padding-bottom: 0; }
 
 @media (min-width: 576px) {
   html {
@@ -47,6 +48,16 @@ body {
     font-size: 24px; } }
 h2 {
   font-size: 30px; }
+
+.maintext {
+  display: block;
+  text-align: center;
+  color: black;
+  text-shadow: -2px 2px 5px brown;
+  font-family: "Love Ya Like A Sister", cursive;
+  font-weight: boldest; }
+  .maintext h3 {
+    font-size: 35px; }
 
 .brown {
   margin: 50px; }
