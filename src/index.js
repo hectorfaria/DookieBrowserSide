@@ -11,6 +11,7 @@ import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import promise from 'redux-promise';
 import NewPost from './components/newpost';
 import PostShow from './components/showpost';
+import Movies from './components/movies';
 
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
@@ -19,30 +20,27 @@ ReactDOM.render(
 		<BrowserRouter>
 			<div>
 				<nav className="navbar nbstyle navbar-fixed-top navbar-light bg-inverse">
-
 					<Link to="/">
-
-						<img
-
-							src="https://i.imgur.com/Ll3BaXB.png"
-							alt=""
-						/>
+						<img src="https://i.imgur.com/Ll3BaXB.png" alt="" />
 					</Link>
 
 					<Link to="/posts" className="links nav-link">
 						Posts
 					</Link>
-
+					<Link to="/movies" className="links nav-link">
+						Movies
+					</Link>
 				</nav>
 				<Switch>
 					<Route path="/posts/new" component={NewPost} />
 					<Route path="/posts/:id" component={PostShow} />
 					<Route path="/posts" component={ListPosts} />
+					<Route path="/movies" component={Movies} />
 					<Route path="/" component={Home} />
 				</Switch>
 			</div>
 		</BrowserRouter>
-	</Provider >,
+	</Provider>,
 	document.getElementById('root'),
 );
 registerServiceWorker();

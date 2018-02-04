@@ -1,0 +1,6 @@
+{
+	"moduleFileExtensions": [ "js", "jsx" ],
+	"moduleNameMapper": {
+		"Random": "<rootDir>/dookiefun/src/components/random.js"
+	}
+}

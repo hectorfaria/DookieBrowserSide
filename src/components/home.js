@@ -29,9 +29,6 @@ class Home extends Component {
 							/>
 						</div>
 					</Link>
-					<div className="maintext">
-						<h3>Coder, WoW Player, noob!</h3>
-					</div>
 					<button className=" btn-danger edit-btn container-fluid" onClick={this.onOpenModal}>
 						<i className="fa fa-cog fa-2x" aria-hidden="true" />
 					</button>

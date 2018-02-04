@@ -26,10 +26,13 @@ class PostShow extends Component {
 		}
 
 		return (
-
 			<div>
 				<Helmet>
-					<style>{'body { background: url("https://cdn-images-1.medium.com/max/2000/1*7v_75ZGg1CTmWAw1rEgMHQ.jpeg"); }'}</style>
+					<style>
+						{
+							'body { background: url("https://cdn-images-1.medium.com/max/2000/1*7v_75ZGg1CTmWAw1rEgMHQ.jpeg"); }'
+						}
+					</style>
 				</Helmet>
 				<div className="cont">
 					<h3 className="titlefont">{post.title}</h3>

@@ -59,6 +59,13 @@ h2 {
   .maintext h3 {
     font-size: 35px; }
 
+.discord-btn {
+  background-color: #313338;
+  border-color: white; }
+  .discord-btn:hover {
+    background-color: #7289da;
+    border-color: white; }
+
 .brown {
   margin: 50px; }
 

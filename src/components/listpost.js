@@ -42,12 +42,16 @@ class ListPosts extends Component {
 		return (
 			<div>
 				<Helmet>
-					<style>{'body { background: url("https://cdn-images-1.medium.com/max/2000/1*7v_75ZGg1CTmWAw1rEgMHQ.jpeg");'}</style>
+					<style>
+						{
+							'body { background: url("https://cdn-images-1.medium.com/max/2000/1*7v_75ZGg1CTmWAw1rEgMHQ.jpeg");'
+						}
+					</style>
 					<style>{'body { background-size: cover'}</style>
 				</Helmet>
 				<div className="listp">
 					<button className=" btn-danger edit-btn listsp container-fluid" onClick={this.onOpenModal}>
-						<i className="fa fa-pencil fa-2x" aria-hidden="true" />
+						<i className="fa fa-pencil-alt fa-2x" aria-hidden="true" />
 					</button>
 					<Modal
 						open={open}
