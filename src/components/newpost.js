@@ -45,7 +45,11 @@ class NewPost extends Component {
 		return (
 			<div>
 				<Helmet>
-					<style>{'body { background: url("https://cdn-images-1.medium.com/max/2000/1*7v_75ZGg1CTmWAw1rEgMHQ.jpeg"); }'}</style>
+					<style>
+						{
+							'body { background: url("https://cdn-images-1.medium.com/max/2000/1*7v_75ZGg1CTmWAw1rEgMHQ.jpeg"); }'
+						}
+					</style>
 				</Helmet>
 				<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
 					<div className="row modalfix">
@@ -62,7 +66,7 @@ class NewPost extends Component {
 					<Field label="Type your dookie!" name="content" type="textarea" component={this.renderField} />
 					<div className="col-md-6">
 						<button type="submit" className="btn-danger edit-btn leftbtn container-fluid">
-							<i className="fa fa-floppy-o fa-2x" aria-hidden="true" />
+							<i className="fa fa-save fa-2x" aria-hidden="true" />
 						</button>
 					</div>
 					<div className="col-md-6">

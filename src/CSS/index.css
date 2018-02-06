@@ -66,6 +66,19 @@ h2 {
     background-color: #7289da;
     border-color: white; }
 
+.movienight {
+  background-color: brown;
+  border-width: 2px;
+  color: white;
+  margin: 5%;
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: auto;
+  display: block; }
+
+div.row {
+  margin: auto; }
+
 .brown {
   margin: 50px; }
 

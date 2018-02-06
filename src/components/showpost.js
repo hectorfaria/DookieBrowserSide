@@ -44,7 +44,7 @@ class PostShow extends Component {
 						className=" btn-danger edit-btn leftbtn container-fluid"
 						onClick={this.onDeleteClick.bind(this)}
 					>
-						<i className="fa fa-trash-o fa-2x" aria-hidden="true" />
+						<i className="fa fa-trash-alt fa-2x" aria-hidden="true" />
 					</button>
 				</div>
 				<div className="col-md-6">
@@ -62,5 +62,3 @@ function mapStateToProps({ post }, ownProps) {
 }
 
 export default connect(mapStateToProps, { FetchPosts2, deletePost })(PostShow);
-
-// fa-times

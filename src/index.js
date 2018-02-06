@@ -27,16 +27,13 @@ ReactDOM.render(
 					<Link to="/posts" className="links nav-link">
 						Posts
 					</Link>
-					<Link to="/movies" className="links nav-link">
-						Movies
-					</Link>
 				</nav>
 				<Switch>
 					<Route path="/posts/new" component={NewPost} />
 					<Route path="/posts/:id" component={PostShow} />
 					<Route path="/posts" component={ListPosts} />
-					<Route path="/movies" component={Movies} />
-					<Route path="/" component={Home} />
+					<Route path="/wee" component={Home} />
+					<Route path="/" component={Movies} />
 				</Switch>
 			</div>
 		</BrowserRouter>
