@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Helmet } from 'react-helmet';
 import { connect } from 'react-redux';
 import { FetchMovies } from '../actions';
 
@@ -32,14 +31,7 @@ class Movies extends Component {
 		}
 		return (
 			<div>
-				<Helmet>
-					<style>{'body { background: url("https://i.imgur.com/HmebxBcr.jpg"); }'}</style>
-					<style>{'body { background-repeat: no-repeat ; }'}</style>
-					<style>{'body {background-attachment: fixed ; }'}</style>
-					<style>{'body {background-size: cover ; }'}</style>
-				</Helmet>
-
-				<div className="modalfix">
+				<div className="modalfix backgroundy">
 					<img className="logohomemain img-fluid" src="https://i.imgur.com/0DkUC6m.png" alt="sudookie" />
 				</div>
 				<a href="https://discord.gg/yrUEhEJ">
@@ -58,7 +50,7 @@ class Movies extends Component {
 					<div className="col-md-6" key="vote">
 						<li className="list-group-item blogpost cont">
 							<iframe
-								src="http://www.strawpoll.me/embed_1/15016353"
+								src="http://www.strawpoll.me/embed_1/15055031"
 								width="300"
 								height="510"
 								title="votenext"

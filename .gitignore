@@ -6,6 +6,14 @@
 # testing
 /test
 
+# css and sass
+
+/CSS
+/SASS
+
+# server project
+
+/server
 
 # production
 /build

@@ -1,18 +1,19 @@
 body {
-  background: url("https://cdn-images-1.medium.com/max/1600/0*k0ZNdPy2ihWKSiOI.");
-  padding: 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; }
+  background-color: #ece1bf; }
 
 .modalfix {
-  padding-top: 70px; }
+  padding-top: 80px;
+  padding-bottom: 80px; }
+
+.modalfix2 {
+  padding-top: 80px; }
 
 .nbstyle {
   background-color: transparent;
   color: transparent; }
   .nbstyle:hover {
     background-color: brown;
+    border-bottom: 2px solid white;
     color: white; }
     .nbstyle:hover .links {
       color: white !important; }
@@ -21,7 +22,7 @@ body {
   margin-left: 15px;
   color: transparent;
   text-decoration: none;
-  font-family: "Love Ya Like A Sister", cursive; }
+  font-family: "Pacifico", cursive; }
   .links a:visited {
     color: white; }
 
@@ -54,7 +55,7 @@ h2 {
   text-align: center;
   color: black;
   text-shadow: -2px 2px 5px brown;
-  font-family: "Love Ya Like A Sister", cursive;
+  font-family: "Pacifico", cursive;
   font-weight: boldest; }
   .maintext h3 {
     font-size: 35px; }
@@ -79,6 +80,12 @@ h2 {
 div.row {
   margin: auto; }
 
+.backgroundy {
+  background: url("https://i.imgur.com/XTUZA33.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
+
 .brown {
   margin: 50px; }
 
@@ -89,7 +96,7 @@ div.row {
   margin-bottom: 2%; }
 
 .titlefont {
-  font-family: "Love Ya Like A Sister", cursive; }
+  font-family: "Pacifico", cursive; }
 
 .blogpost {
   background-color: brown;
@@ -132,7 +139,7 @@ div.row {
       width: 60%; } }
 
 .custom-modal {
-  font-family: "Love Ya Like A Sister", cursive;
+  font-family: "Pacifico", cursive;
   margin-top: 17%; }
 
 a:hover {
@@ -156,7 +163,7 @@ a:hover {
   border-radius: 12px; }
 
 .newpostfont {
-  font-family: "Love Ya Like A Sister", cursive; }
+  font-family: "Pacifico", cursive; }
 
 .input-lg {
   height: 250px;
