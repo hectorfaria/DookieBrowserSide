@@ -32,6 +32,6 @@
 		"build": "react-scripts build",
 		"test": "jest --config jest.config.json",
 		"eject": "react-scripts eject",
-		"start": "node server/index.js"
+		"start": "node index.js"
 	}
 }
