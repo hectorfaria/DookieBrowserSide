@@ -4,6 +4,6 @@ module.exports = {
 	MOVIE_KEY: process.env.MOVIE_KEY,
 	MONGO_URI: process.env.MONGO_URI,
 	COOKIE_KEY: process.env.COOKIE_KEY,
-	googleClientID_PRO: process.env.GOOGLE_CLIENT_ID,
-	googleSecretID_PRO: process.env.GOOGLE_CLIENT_SECRET,
+	googleClientID: process.env.GOOGLE_CLIENT_ID,
+	googleSecretID: process.env.GOOGLE_CLIENT_SECRET,
 };
