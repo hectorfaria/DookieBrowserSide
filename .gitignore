@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 
+
 # testing
 /test
 
@@ -13,11 +14,12 @@
 
 # server project
 
-/server
+
+
 
 # production
 /build
-
+dev.js
 # misc
 .DS_Store
 .env.local
