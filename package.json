@@ -2,6 +2,14 @@
 	"name": "dooksblog",
 	"version": "0.1.0",
 	"private": true,
+	"proxy": {
+		"/auth/google": {
+			"target": "http://localhost:2020"
+		},
+		"/api/*": {
+			"target": "http://localhost:2020"
+		}
+	},
 	"dependencies": {
 		"axios": "^0.17.1",
 		"babel-preset-stage-1": "^6.24.1",
@@ -26,10 +34,10 @@
 		"react-router-dom": "^4.2.2",
 		"react-scripts": "1.0.17",
 		"react-transition-group": "^2.2.1",
-		"reactstrap": "^4.8.0",
 		"redux": "^3.7.2",
 		"redux-form": "^7.2.1",
 		"redux-promise": "^0.5.3",
+		"redux-thunk": "^2.2.0",
 		"webpack": "^3.10.0"
 	},
 	"scripts": {
@@ -37,7 +45,7 @@
 		"build": "react-scripts build",
 		"test": "jest --config jest.config.json",
 		"eject": "react-scripts eject",
-		"start": "node index.js",
-		"dev": "nodemon index.js"
+		"dev:server": "nodemon index.js",
+		"dev": "npm-run-all --parallel dev:*"
 	}
 }

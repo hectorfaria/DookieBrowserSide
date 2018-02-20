@@ -34,7 +34,7 @@ class Movies extends Component {
 				<div className="modalfix backgroundy">
 					<img className="logohomemain img-fluid" src="https://i.imgur.com/0DkUC6m.png" alt="sudookie" />
 				</div>
-				<a href="https://discord.gg/yrUEhEJ">
+				<a href="https://discord.gg/8ptUM3d">
 					<button type="button" className="btn btn-primary discord-btn logohome">
 						Join the Discord <i className="fab fa-discord" />
 					</button>
@@ -45,27 +45,13 @@ class Movies extends Component {
 						Discord Server including the option of changing the subtitles to English.
 					</div>
 				</div>
-				<ul className="list-group">
-					{this.renderMovs()}
-					<div className="col-md-6" key="vote">
-						<li className="list-group-item blogpost cont">
-							<iframe
-								src="http://www.strawpoll.me/embed_1/15055031"
-								width="300"
-								height="510"
-								title="votenext"
-							>
-								Loading poll...
-							</iframe>
-						</li>
-					</div>
-				</ul>
+				<ul className="list-group">{this.renderMovs()}</ul>
 			</div>
 		);
 	}
 }
 
-function mapstate2props(state) {
-	return { movie: state.movie };
+function mapstate2props({ movie }) {
+	return { movie };
 }
 export default connect(mapstate2props, { FetchMovies })(Movies);

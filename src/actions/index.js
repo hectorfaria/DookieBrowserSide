@@ -1,12 +1,21 @@
 /*eslint-disable no-unused-vars*/
 import axios from 'axios';
-import { FETCH_URL, API_KEY, MOVIE_KEY } from '../../config/keys';
+import { FETCH_URL, API_KEY, MOVIE_KEY } from '../config/keys';
 
 export const FETCH_POSTS = 'fetch_posts';
 export const CREATE_POSTS = 'create_posts';
 export const FETCH_POSTS2 = 'fetch_post';
 export const DELETE_POSTS = 'delete_posts';
 export const FETCH_MOVIES = 'fetch_posts';
+export const FETCH_USER = 'fetch_user';
+
+export function FetchUser() {
+	return async function(dispatch) {
+		const res = await axios.get('/api/current_user');
+
+		dispatch({ type: FETCH_USER, payload: res.data });
+	};
+}
 
 export function FetchMovies() {
 	const req = axios.get(`${FETCH_URL}/posts${MOVIE_KEY}`);
