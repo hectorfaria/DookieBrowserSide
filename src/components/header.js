@@ -9,7 +9,7 @@ class Header extends Component {
 				return;
 			case false:
 				return (
-					<a href="/auth/google" className="btn btn-sm btn-primary font-para">
+					<a href="/api/auth/google" className="btn btn-sm btn-primary font-para">
 						Login with <b>Google</b>
 					</a>
 				);
