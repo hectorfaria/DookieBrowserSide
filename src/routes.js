@@ -3,9 +3,10 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './components/header';
 import NewPost from './pages/newpost';
 import PostShow from './pages/showpost';
-import Movies from './pages/movies';
+import Home from './pages/home';
 import NotFound from './pages/notfound';
 import ListPosts from './pages/listpost';
+import DonatePage from './pages/donatepage';
 import { connect } from 'react-redux';
 import * as actions from './actions';
 
@@ -19,7 +20,8 @@ class Routes extends Component {
 				<div>
 					<Header />
 					<Switch>
-						<Route path="/" exact component={Movies} />
+						<Route path="/" exact component={Home} />
+						<Route path="/donate" component={DonatePage} />
 						<Route path="/posts/new" component={NewPost} />
 						<Route path="/posts/:id" component={PostShow} />
 						<Route path="/posts" component={ListPosts} />

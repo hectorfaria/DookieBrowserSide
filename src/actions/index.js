@@ -17,6 +17,14 @@ export function FetchUser() {
 	};
 }
 
+export function handleStripeToken(token) {
+	return async function(dispatch) {
+		const res = await axios.post('api/stripe', token);
+
+		dispatch({ type: FETCH_USER, payload: res.data });
+	};
+}
+
 export function FetchMovies() {
 	const req = axios.get(`${FETCH_URL}/posts${MOVIE_KEY}`);
 	return {

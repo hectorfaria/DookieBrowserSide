@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FetchMovies } from '../actions';
 
-class Movies extends Component {
+class Home extends Component {
 	componentDidMount() {
 		this.props.FetchMovies();
 	}
@@ -54,4 +54,4 @@ class Movies extends Component {
 function mapstate2props({ movie }) {
 	return { movie };
 }
-export default connect(mapstate2props, { FetchMovies })(Movies);
+export default connect(mapstate2props, { FetchMovies })(Home);

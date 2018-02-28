@@ -9,24 +9,32 @@ class Header extends Component {
 				return;
 			case false:
 				return (
-					<a href="/api/auth/google" className="btn btn-sm btn-primary font-para">
+					<a href="/api/auth/google" className="btn contnewpage btn-sm btn-primary font-para">
 						Login with <b>Google</b>
 					</a>
 				);
 			default:
-				return (
-					<a href="/api/logout" className="btn btn-sm btn-primary font-para">
+				return [
+					<p className="links nav-link only4logging" key="credits">
+						Credits: {this.props.auth.credits}
+					</p>,
+					<a href="/api/logout" className="btn contnewpage btn-sm btn-primary font-para" key="logoutkey">
 						Logout
-					</a>
-				);
+					</a>,
+					<Link to="/donate" className="links nav-link only4logging" key="Donate">
+						<button type="button" className="btn btn-sm btn-warning">
+							<i className="fas fa-dollar-sign" />
+						</button>
+					</Link>,
+				];
 		}
 	}
 
 	render() {
 		return (
-			<nav className="navbar nbstyle navbar-fixed-top navbar-light bg-inverse">
+			<nav className="nav nbstyle navbar-fixed-top">
 				<div className="row">
-					<div className="col-md-2">
+					<div className="col-md-8">
 						<Link to="/">
 							<img src="https://i.imgur.com/Ll3BaXB.png" alt="" />
 						</Link>
@@ -35,8 +43,7 @@ class Header extends Component {
 							Posts
 						</Link>
 					</div>
-					<div className="col-md-8" />
-					<div className="col-md-2">{this.rendercontent()}</div>
+					{this.rendercontent()}
 				</div>
 			</nav>
 		);

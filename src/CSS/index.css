@@ -81,7 +81,7 @@ div.row {
   margin: auto; }
 
 .backgroundy {
-  background: url("https://i.imgur.com/XTUZA33.jpg");
+  background: url("https://i.pinimg.com/originals/ee/ff/fb/eefffbe591a0d424e6580c35ac480c1d.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover; }
@@ -144,6 +144,16 @@ div.row {
 
 a:hover {
   text-decoration: none; }
+
+.donate-btn {
+  background: transparent;
+  border: none !important;
+  margin: 50px; }
+  .donate-btn img {
+    border-radius: 7px; }
+
+.only4logging {
+  margin-right: 10px; }
 
 .cont {
   background-color: brown;
