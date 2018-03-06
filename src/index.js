@@ -7,8 +7,10 @@ import { createStore, applyMiddleware } from 'redux';
 import reducers from './reducers/reducers';
 import promise from 'redux-promise';
 import Routes from './routes';
-
 import reduxThunk from 'redux-thunk';
+import axios from 'axios';
+
+window.axios = axios;
 const createStoreWithMiddleware = applyMiddleware(reduxThunk, promise)(createStore);
 
 ReactDOM.render(

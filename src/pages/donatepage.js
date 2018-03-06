@@ -29,14 +29,14 @@ class DonatePage extends Component {
 
 				<div className="row">
 					<div className="col-md-4">
-						<div className="modalfix cont">
+						<div className="modalfix cont btn-danger">
 							<h3 className="font-para ctn-btn">Stripe</h3>
 							<StripeBilling />
 							<h6>Donate Now!</h6>
 						</div>
 					</div>
 					<div className="col-md-4">
-						<div className="modalfix cont">
+						<div className="modalfix cont btn-danger">
 							<h3 className="font-para ctn-btn">Paypal</h3>
 							<button className="donate-btn">
 								<img
@@ -49,7 +49,7 @@ class DonatePage extends Component {
 						</div>
 					</div>
 					<div className="col-md-4">
-						<div className="modalfix cont">
+						<div className="modalfix cont btn-danger">
 							<h3 className="font-para ctn-btn">Ethereum</h3>
 							<button className="donate-btn">
 								<img

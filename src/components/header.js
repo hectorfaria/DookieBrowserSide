@@ -38,9 +38,8 @@ class Header extends Component {
 						<Link to="/">
 							<img src="https://i.imgur.com/Ll3BaXB.png" alt="" />
 						</Link>
-
-						<Link to="/posts" className="links nav-link">
-							Posts
+						<Link to="/characters" className="links nav-link">
+							Roleplay
 						</Link>
 					</div>
 					{this.rendercontent()}

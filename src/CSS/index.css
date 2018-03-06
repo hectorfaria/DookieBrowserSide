@@ -205,4 +205,75 @@ a:hover {
 .font-para {
   font-family: "Quicksand", cursive; }
 
+.card-img-top:hover {
+  background-color: white; }
+
+.card {
+  width: 12rem;
+  margin: 5%;
+  margin-top: 20px;
+  border: 3px solid black;
+  background-size: cover;
+  background-blend-mode: color-burn;
+  transition: background-color 0.5s; }
+  .card:hover {
+    opacity: 0.8;
+    background-color: black; }
+    .card:hover h4 {
+      color: green; }
+
+.backgroundcard {
+  font-family: "Cinzel", serif;
+  background: black;
+  color: white; }
+  .backgroundcard h5 {
+    font-size: 18px;
+    text-align: center; }
+
+.bg-characters {
+  background: url("http://chairmanmigo.com/wp-content/uploads/2014/06/Wheres-Waldo-medieval.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 9%; }
+
+.status-live {
+  margin-bottom: 4px;
+  color: white;
+  font-size: 16px;
+  font-family: "Cinzel", serif;
+  text-align: center; }
+
+.centered {
+  margin: auto;
+  margin-top: 5%;
+  font-family: "Cinzel", serif;
+  font-size: 40px;
+  text-align: center; }
+
+.topplayer {
+  margin-top: 15%; }
+
+.charcont {
+  font-family: "Cinzel", serif;
+  background-color: white;
+  padding: 2%;
+  opacity: 100%;
+  border: solid black 2px;
+  border-radius: 7px;
+  margin: 5%;
+  text-align: center; }
+  @media (min-width: 576px) {
+    .charcont {
+      margin-top: 5%; } }
+  .charcont .normalfont {
+    font-size: 15px; }
+  .charcont .basicfont {
+    font-size: 12px; }
+
+.outsidefont {
+  font-family: "Cinzel", serif;
+  font-size: 18px;
+  text-align: center; }
+
 /*# sourceMappingURL=index.css.map */

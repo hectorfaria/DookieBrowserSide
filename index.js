@@ -4,8 +4,8 @@ const cookieSession = require('cookie-session');
 const passport = require('passport');
 const keys = require('./src/config/keys');
 const bodyParser = require('body-parser');
-
 require('./models/mongouser');
+require('./models/survey');
 require('./services/passport');
 
 mongoose.connect(keys.MONGO_URI);
@@ -26,6 +26,7 @@ app.use(passport.session());
 
 require('./routes/authRoutes')(app);
 require('./routes/billingRoutes')(app);
+require('./routes/surveyRoutes')(app);
 
 const PORT = process.env.PORT || 2020;
 app.listen(PORT);
