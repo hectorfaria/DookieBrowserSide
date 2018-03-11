@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FetchMovies } from '../actions';
+import { Link } from 'react-router-dom';
 
 class Home extends Component {
 	componentDidMount() {
@@ -34,15 +35,18 @@ class Home extends Component {
 				<div className="modalfix backgroundy">
 					<img className="logohomemain img-fluid" src="https://i.imgur.com/0DkUC6m.png" alt="sudookie" />
 				</div>
-				<a href="https://discord.gg/8ptUM3d">
-					<button type="button" className="btn btn-primary discord-btn logohome">
-						Join the Discord <i className="fab fa-discord" />
-					</button>
-				</a>
-				<div className="blogpost cont">
-					<div className="font-para">
-						Note: all subtitles and dubs are in <b>NORWEGIAN</b> and the time will be discussed in the
-						Discord Server including the option of changing the subtitles to English.
+				<div className="row">
+					<div className="col-md-6 logohomemain">
+						<a href="https://discord.gg/8ptUM3d" className="logohomemain">
+							<button type="button" className="btn btn-primary discord-btn logohome">
+								Join the Discord <i className="fab fa-discord" />
+							</button>
+						</a>
+					</div>
+					<div className="col-md-6 ">
+						<Link to="/posts" className="logohomemain btn btn-danger cont font-para ">
+							Suggest a movie
+						</Link>
 					</div>
 				</div>
 				<ul className="list-group">{this.renderMovs()}</ul>

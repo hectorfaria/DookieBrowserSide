@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { Field, reduxForm } from 'redux-form';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { CreatePosts } from '../actions';
+import { CreatePosts } from '../../actions/index';
 
 const FIELDS = {
 	title: { type: 'input', label: 'Enter some title' },
@@ -55,7 +55,12 @@ class NewPost extends Component {
 						</div>
 						<div className="col-md-1" />
 					</div>
-					<Field label="Type your dookie!" name="content" type="textarea" component={this.renderField} />
+					<Field
+						label="Why you want this film?"
+						name="content"
+						type="textarea"
+						component={this.renderField}
+					/>
 					<div className="col-md-6">
 						<button type="submit" className="btn-danger edit-btn leftbtn container-fluid">
 							<i className="fa fa-save fa-2x" aria-hidden="true" />

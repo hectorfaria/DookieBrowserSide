@@ -26,6 +26,11 @@ class Header extends Component {
 							<i className="fas fa-dollar-sign" />
 						</button>
 					</Link>,
+					<Link to="/dashboard" className="links nav-link only4logging" key="Dash">
+						<button type="button" className="btn btn-sm btn-danger">
+							<i className="far fa-clipboard" />
+						</button>
+					</Link>,
 				];
 		}
 	}
@@ -34,7 +39,7 @@ class Header extends Component {
 		return (
 			<nav className="nav nbstyle navbar-fixed-top">
 				<div className="row">
-					<div className="col-md-8">
+					<div className="col-md-7">
 						<Link to="/">
 							<img src="https://i.imgur.com/Ll3BaXB.png" alt="" />
 						</Link>

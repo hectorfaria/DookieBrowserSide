@@ -1,6 +1,5 @@
 const sendgrid = require('sendgrid');
 const helper = sendgrid.mail;
-
 const keys = require('../src/config/keys');
 
 class Mailer extends helper.Mail {

@@ -8,6 +8,7 @@ export const FETCH_POSTS2 = 'fetch_post';
 export const DELETE_POSTS = 'delete_posts';
 export const FETCH_MOVIES = 'fetch_posts';
 export const FETCH_USER = 'fetch_user';
+export const FETCH_SURVEYS = 'fetch_surveys';
 
 export function FetchUser() {
 	return async function(dispatch) {
@@ -66,5 +67,21 @@ export function deletePost(id, callback) {
 	return {
 		type: DELETE_POSTS,
 		payload: id,
+	};
+}
+
+export function saveSurvey(values, history) {
+	return async function(dispatch) {
+		const res = await axios.post('/api/surveys', values);
+
+		history.push('/dashboard');
+		dispatch({ type: 'FETCH_USER', payload: res.data });
+	};
+}
+
+export function fetchSurveys() {
+	return async function(dispatch) {
+		const res = await axios.get('/api/surveys');
+		dispatch({ type: FETCH_SURVEYS, payload: res.data });
 	};
 }

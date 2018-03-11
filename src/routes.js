@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Header from './components/header';
-import NewPost from './pages/newpost';
-import PostShow from './pages/showpost';
-import Home from './pages/home';
-import NotFound from './pages/notfound';
-import ListPosts from './pages/listpost';
-import DonatePage from './pages/donatepage';
-import CharacterSheets from './pages/charactersheet';
-import Yardie from './pages/characters/yardie';
-import Azhaar from './pages/characters/azhaar';
-import Hjalte from './pages/characters/hjalte';
-import Tenebris from './pages/characters/tenebris';
-import Thunder from './pages/characters/thunder';
-import Wang from './pages/characters/wang';
+import Header from './components/Header';
+import NewPost from './pages/posts/NewPost';
+import PostShow from './pages/posts/ShowPost';
+import Home from './pages/Home';
+import NotFound from './pages/NotFound';
+import ListPosts from './pages/posts/ListPost';
+import DonatePage from './pages/DonatePage';
+import CharacterSheets from './pages/CharacterSheet';
+import Yardie from './pages/characters/Yardie';
+import Azhaar from './pages/characters/Azhaar';
+import Hjalte from './pages/characters/Hjalte';
+import Tenebris from './pages/characters/Tenebris';
+import Thunder from './pages/characters/Thunder';
+import Wang from './pages/characters/Wang';
+import Dashboard from './pages/Dashboard';
+import NewSurveys from './pages/dashboardfun/NewSurvey';
 import { connect } from 'react-redux';
 import * as actions from './actions';
 
@@ -28,6 +30,8 @@ class Routes extends Component {
 					<Header />
 					<Switch>
 						<Route path="/" exact component={Home} />
+						<Route path="/dashboard/new" component={NewSurveys} />
+						<Route path="/dashboard" component={Dashboard} />
 						<Route path="/characters/yardie" component={Yardie} />
 						<Route path="/characters/hjalte" component={Hjalte} />
 						<Route path="/characters/tenebris" component={Tenebris} />

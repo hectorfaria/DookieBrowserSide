@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { FetchPosts } from '../actions';
+import { FetchPosts } from '../../actions/index';
 import { Link } from 'react-router-dom';
 import Modal from 'react-responsive-modal';
 
@@ -53,12 +53,12 @@ class ListPosts extends Component {
 						<h2>What you want to do</h2>
 						<div className="text-xs-left">
 							<Link className="btn btn-danger ctn-btn" to="/posts/new">
-								Add Post
+								Add Movie
 							</Link>
 						</div>
 					</Modal>
 				</div>
-
+				<h3 className="logohomemain cont font-para ">Suggest a movie</h3>
 				<ul className="list-group brown">{this.renderPosts()}</ul>
 			</div>
 		);

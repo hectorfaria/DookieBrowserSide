@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { FetchPosts2, deletePost } from '../actions';
+import { FetchPosts2, deletePost } from '../../actions/index';
 import { Link } from 'react-router-dom';
 
 class PostShow extends Component {
@@ -31,14 +31,7 @@ class PostShow extends Component {
 					<p>Categories: {post.categories}</p>
 					<p className="font-para">{post.content}</p>
 				</div>
-				<div className="col-md-6">
-					<button
-						className=" btn-danger edit-btn leftbtn container-fluid"
-						onClick={this.onDeleteClick.bind(this)}
-					>
-						<i className="fa fa-trash-alt fa-2x" aria-hidden="true" />
-					</button>
-				</div>
+				<div className="col-md-6" />
 				<div className="col-md-6">
 					<Link className="btn-danger edit-btn rightbtn container-fluid" to="/posts">
 						<i className="fa fa-arrow-left fa-2x" aria-hidden="true" />
