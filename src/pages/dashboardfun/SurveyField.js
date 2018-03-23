@@ -2,9 +2,9 @@ import React from 'react';
 
 export default ({ input, label, meta }) => {
 	return (
-		<div>
+		<div className="container-fluid">
 			<input {...input} placeholder={label} />
-			<div className="text-help">{meta.touched ? meta.error : ''}</div>
+			<div className="text-error">{meta.touched ? meta.error : ''}</div>
 		</div>
 	);
 };

@@ -10,7 +10,7 @@ class NewSurveysForm extends Component {
 	renderFields(field) {
 		return _.map(FormFields, ({ label, name }) => {
 			return (
-				<div className="form-grou2p" key={name}>
+				<div key={name}>
 					<Field
 						component={SurveyField}
 						type="text"
@@ -26,18 +26,16 @@ class NewSurveysForm extends Component {
 
 	render() {
 		return (
-			<div className="page">
-				<div className="formsurvey cont">
-					<form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)}>
-						{this.renderFields()}
-						<button type="submit" className="btn btn-success ">
-							Submit
-						</button>
-						<Link to="/dashboard" className="btn">
-							<button className="btn btn-danger">Cancel</button>
-						</Link>
-					</form>
-				</div>
+			<div className="new-form">
+				<form onSubmit={this.props.handleSubmit(this.props.onSurveySubmit)} className="new-form__survey">
+					{this.renderFields()}
+					<button type="submit" className="btn btn--success">
+						Submit
+					</button>
+					<Link to="/dashboard">
+						<button className="btn btn--danger">Cancel</button>
+					</Link>
+				</form>
 			</div>
 		);
 	}

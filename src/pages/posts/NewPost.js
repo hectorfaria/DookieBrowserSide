@@ -14,11 +14,11 @@ const FIELDS = {
 class NewPost extends Component {
 	renderField(field) {
 		return (
-			<div className="cont container-fluid">
-				<label className="newpostfont">{field.label}</label>
-				<div className="form-group has-danger">
+			<div className="container">
+				<label className="">{field.label}</label>
+				<div className="has-danger">
 					<field.type
-						className="inputstyle form-control  input-sm"
+						className="form-control"
 						rows="8"
 						cols="50"
 						name="content"
@@ -28,7 +28,7 @@ class NewPost extends Component {
 					/>
 				</div>
 
-				<div className="text-help">{field.meta.touched ? field.meta.error : ''}</div>
+				<div className="text-error">{field.meta.touched ? field.meta.error : ''}</div>
 			</div>
 		);
 	}
@@ -42,32 +42,33 @@ class NewPost extends Component {
 	render() {
 		const { handleSubmit } = this.props;
 		return (
-			<div>
+			<div className="u-padding-8 titles-sm quicksand">
 				<form onSubmit={handleSubmit(this.onSubmit.bind(this))}>
-					<div className="row modalfix2">
-						<div className="col-md-1" />
-						<div className="col-md-5 contnewpage">
+					<div className="row">
+						<div className="col-md-2" />
+						<div className="col-md-3">
 							<Field label="Title" name="title" type="input" component={this.renderField} />
 						</div>
-
-						<div className="col-md-5 contnewpage">
+						<div className="col-md-2" />
+						<div className="col-md-3">
 							<Field label="Categories" name="categories" type="input" component={this.renderField} />
 						</div>
-						<div className="col-md-1" />
 					</div>
-					<Field
-						label="Why you want this film?"
-						name="content"
-						type="textarea"
-						component={this.renderField}
-					/>
+					<div className="row u-margin-up-5">
+						<Field
+							label="Why you want this film?"
+							name="content"
+							type="textarea"
+							component={this.renderField}
+						/>
+					</div>
 					<div className="col-md-6">
-						<button type="submit" className="btn-danger edit-btn leftbtn container-fluid">
+						<button type="submit" className="btn btn--danger">
 							<i className="fa fa-save fa-2x" aria-hidden="true" />
 						</button>
 					</div>
 					<div className="col-md-6">
-						<Link className="btn-danger edit-btn rightbtn container-fluid" to="/posts">
+						<Link className="btn btn--danger" to="/posts">
 							<i className="fa fa-arrow-left fa-2x" aria-hidden="true" />
 						</Link>
 					</div>

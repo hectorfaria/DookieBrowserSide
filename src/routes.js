@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { ScrollContext } from 'react-router-scroll-4';
 import Header from './components/Header';
 import NewPost from './pages/posts/NewPost';
 import PostShow from './pages/posts/ShowPost';
@@ -26,26 +27,28 @@ class Routes extends Component {
 	render() {
 		return (
 			<BrowserRouter>
-				<div>
-					<Header />
-					<Switch>
-						<Route path="/" exact component={Home} />
-						<Route path="/dashboard/new" component={NewSurveys} />
-						<Route path="/dashboard" component={Dashboard} />
-						<Route path="/characters/yardie" component={Yardie} />
-						<Route path="/characters/hjalte" component={Hjalte} />
-						<Route path="/characters/tenebris" component={Tenebris} />
-						<Route path="/characters/azhaar" component={Azhaar} />
-						<Route path="/characters/thunder" component={Thunder} />
-						<Route path="/characters/wang" component={Wang} />
-						<Route path="/characters" component={CharacterSheets} />
-						<Route path="/donate" component={DonatePage} />
-						<Route path="/posts/new" component={NewPost} />
-						<Route path="/posts/:id" component={PostShow} />
-						<Route path="/posts" component={ListPosts} />
-						<Route component={NotFound} />
-					</Switch>
-				</div>
+				<ScrollContext>
+					<div>
+						<Header />
+						<Switch>
+							<Route path="/" exact component={Home} />
+							<Route path="/dashboard/new" component={NewSurveys} />
+							<Route path="/dashboard" component={Dashboard} />
+							<Route path="/characters/yardie" component={Yardie} />
+							<Route path="/characters/hjalte" component={Hjalte} />
+							<Route path="/characters/tenebris" component={Tenebris} />
+							<Route path="/characters/azhaar" component={Azhaar} />
+							<Route path="/characters/thunder" component={Thunder} />
+							<Route path="/characters/wang" component={Wang} />
+							<Route path="/characters" component={CharacterSheets} />
+							<Route path="/donate" component={DonatePage} />
+							<Route path="/posts/new" component={NewPost} />
+							<Route path="/posts/:id" component={PostShow} />
+							<Route path="/posts" component={ListPosts} />
+							<Route component={NotFound} />
+						</Switch>
+					</div>
+				</ScrollContext>
 			</BrowserRouter>
 		);
 	}

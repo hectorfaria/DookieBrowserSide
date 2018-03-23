@@ -8,14 +8,8 @@
 /test
 
 # css and sass
-
-/CSS
-/SASS
-
-# server project
-
-
-
+.sass-cache
+/src/css
 
 # production
 /build

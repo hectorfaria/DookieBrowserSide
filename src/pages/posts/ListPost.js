@@ -2,21 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { FetchPosts } from '../../actions/index';
 import { Link } from 'react-router-dom';
-import Modal from 'react-responsive-modal';
 
 class ListPosts extends Component {
-	state = {
-		open: false,
-	};
-
-	onOpenModal = () => {
-		this.setState({ open: true });
-	};
-
-	onCloseModal = () => {
-		this.setState({ open: false });
-	};
-
 	componentDidMount() {
 		this.props.FetchPosts();
 	}
@@ -28,8 +15,8 @@ class ListPosts extends Component {
 			const post = posts[id];
 			return (
 				<Link to={`/posts/${post.id}`} key={post.id}>
-					<li className="btn btn-danger list-group-item blogpost container-fluid" key={id}>
-						<div className="titlefont">{post.title}</div>
+					<li className="container quicksand container-fluid" key={id}>
+						<div className="titles-sm">{post.title}</div>
 					</li>
 				</Link>
 			);
@@ -37,29 +24,15 @@ class ListPosts extends Component {
 	}
 
 	render() {
-		const { open } = this.state;
 		return (
 			<div>
-				<div className="listp">
-					<button className=" btn-danger edit-btn listsp container-fluid" onClick={this.onOpenModal}>
+				<div className="u-padding-8">
+					<Link className="btn btn--edit" to="/posts/new">
 						<i className="fa fa-pencil-alt fa-2x" aria-hidden="true" />
-					</button>
-					<Modal
-						open={open}
-						onClose={this.onCloseModal}
-						classNames={{ overlay: 'custom-overlay', modal: 'custom-modal' }}
-						animationDuration={1000}
-					>
-						<h2>What you want to do</h2>
-						<div className="text-xs-left">
-							<Link className="btn btn-danger ctn-btn" to="/posts/new">
-								Add Movie
-							</Link>
-						</div>
-					</Modal>
+					</Link>
 				</div>
-				<h3 className="logohomemain cont font-para ">Suggest a movie</h3>
-				<ul className="list-group brown">{this.renderPosts()}</ul>
+				<h3 className="titles pacifico margin-donate-center">Suggest a movie</h3>
+				<ul className="display-block-auto">{this.renderPosts()}</ul>
 			</div>
 		);
 	}

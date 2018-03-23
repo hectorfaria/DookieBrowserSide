@@ -8,57 +8,61 @@ class DonatePage extends Component {
 
 		if (auth === false) {
 			return (
-				<div className="modalfix">
-					<img className="logohomemain img-fluid" src="https://i.imgur.com/zkQOonQ.png" alt="404 not found" />
-					<div className="cont titlefont">Please Login to continue...</div>;
+				<div className="u-padding-8">
+					<img
+						className="display-block-auto img-fluid "
+						src="https://i.imgur.com/zkQOonQ.png"
+						alt="404 not found"
+					/>
+					<div className="container titles pacifico">Please Login to continue...</div>;
 				</div>
 			);
 		}
 
 		return (
-			<div>
-				<div className="cont">
+			<div className="u-padding-8">
+				<div className="container">
 					<b>
-						<p className="font-para">
+						<p className="container--para quicksand">
 							This page is only for educationals Purposes - Flows and payments are FAKE and in no
 							circustance we accept donations.
 						</p>
 					</b>
 				</div>
-				<h1 className="maintext">Donate now!</h1>
+				<h1 className="u-padding-8 titles pacifico">Donate now!</h1>
 
 				<div className="row">
 					<div className="col-md-4">
-						<div className="modalfix cont btn-danger">
-							<h3 className="font-para ctn-btn">Stripe</h3>
+						<div className="container margin-donate-center">
+							<h3 className="container--para pacifico">Stripe</h3>
 							<StripeBilling />
-							<h6>Donate Now!</h6>
+							<h6 className="quicksand para">Donate Now!</h6>
 						</div>
 					</div>
 					<div className="col-md-4">
-						<div className="modalfix cont btn-danger">
-							<h3 className="font-para ctn-btn">Paypal</h3>
-							<button className="donate-btn">
+						<div className="container margin-donate-center">
+							<h3 className="container--para pacifico">Paypal</h3>
+							<button className="btn--donate">
 								<img
 									src="https://files.startupranking.com/startup/thumb/32328_cfc4897b8f23a04c52aa148f8fa680d8b5218544_paypal_l.png"
-									className="img-fluid"
+									className="display-block-auto img-fluid"
 									alt="paypal"
 								/>
 							</button>
-							<h6>...Soon</h6>
+							<h6 className="quicksand para">...Soon</h6>
 						</div>
 					</div>
 					<div className="col-md-4">
-						<div className="modalfix cont btn-danger">
-							<h3 className="font-para ctn-btn">Ethereum</h3>
-							<button className="donate-btn">
+						<div className="container margin-donate-center">
+							<h3 className="container--para pacifico">Ethereum</h3>
+							<button className="btn--donate">
 								<img
 									src="https://d3npzzrehyahmo.cloudfront.net/images/89/23/89231ba1d7cd720fb5d00106b33bf9db_4031156383d_t.png"
-									className="img-fluid"
+									className="display-block-auto img-fluid"
 									alt="ethereum"
 								/>
 							</button>
-							<h6>...Soon</h6>
+							<h6 className="quicksand para">...Soon</h6>
 						</div>
 					</div>
 				</div>

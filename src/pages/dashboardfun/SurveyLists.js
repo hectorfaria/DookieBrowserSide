@@ -11,14 +11,14 @@ class SurveyLists extends Component {
 		return this.props.surveys.reverse().map((survey) => {
 			return (
 				<div className="col-md-4" key={survey._id}>
-					<div className="cont">
-						<h2 className="maintext">{survey.title}</h2>
-						<div className="font-para blogpost">
-							<p className="formvalues">{survey.subject}</p>
-							<h2 className="contnewpage">Responses</h2>
+					<div className="containers container-fluid">
+						<h2 className="titles-sm">{survey.title}</h2>
+						<div className="titles-sm">
+							<p className="para">{survey.subject}</p>
+							<h2 className="titles-sm">Responses</h2>
 							<p>✓: {survey.yes}</p>
 							<p>X: {survey.no} </p>
-							<p className="formvalues">Sended:{new Date(survey.dateSent).toLocaleDateString()}</p>
+							<p className="titles-sm">Sended:{new Date(survey.dateSent).toLocaleDateString()}</p>
 						</div>
 					</div>
 				</div>

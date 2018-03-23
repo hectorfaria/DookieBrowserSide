@@ -21,19 +21,18 @@ class PostShow extends Component {
 		const { post } = this.props;
 
 		if (!post) {
-			return <div className="cont titlefont">Loading...</div>;
+			return <div className="container">Loading...</div>;
 		}
 
 		return (
-			<div>
-				<div className="cont">
-					<h3 className="titlefont">{post.title}</h3>
+			<div className="u-padding-8">
+				<div className="container">
+					<h3 className="titles pacifico">{post.title}</h3>
 					<p>Categories: {post.categories}</p>
-					<p className="font-para">{post.content}</p>
+					<p className="para quicksand">{post.content}</p>
 				</div>
-				<div className="col-md-6" />
 				<div className="col-md-6">
-					<Link className="btn-danger edit-btn rightbtn container-fluid" to="/posts">
+					<Link className="btn btn--edit" to="/posts">
 						<i className="fa fa-arrow-left fa-2x" aria-hidden="true" />
 					</Link>
 				</div>

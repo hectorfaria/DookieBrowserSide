@@ -14,10 +14,10 @@ class Home extends Component {
 			const movie = movies[id];
 			return (
 				<div className="col-md-6" key={id}>
-					<li className="list-group-item blogpost container-fluid" key={id}>
-						<div className="titlefont">{movie.title}</div>
-						<img className="logohomemain img-fluid" src={movie.content} alt="moviepost" />
-						<div className="font-para">{movie.categories}</div>
+					<li className="containers" key={id}>
+						<div className="containers--title container-fluid pacifico">{movie.title}</div>
+						<img className="containers__imgs img-fluid" src={movie.content} alt="moviepost" />
+						<div className="containers--para quicksand">{movie.categories}</div>
 					</li>
 				</div>
 			);
@@ -28,23 +28,27 @@ class Home extends Component {
 		const { movie } = this.props;
 
 		if (!movie) {
-			return <div className="cont titlefont">Loading...</div>;
+			return <div className="container">Loading...</div>;
 		}
 		return (
 			<div>
-				<div className="modalfix backgroundy">
-					<img className="logohomemain img-fluid" src="https://i.imgur.com/0DkUC6m.png" alt="sudookie" />
+				<div className="u-padding-8 home-background">
+					<img
+						className="display-block-auto img-fluid"
+						src="https://data.whicdn.com/images/97429737/original.png"
+						alt="dookie"
+					/>
 				</div>
 				<div className="row">
-					<div className="col-md-6 logohomemain">
-						<a href="https://discord.gg/8ptUM3d" className="logohomemain">
-							<button type="button" className="btn btn-primary discord-btn logohome">
+					<div className="col-md-6">
+						<a href="https://discord.gg/8ptUM3d">
+							<button type="button" className="margin-center btn btn--discord quicksand">
 								Join the Discord <i className="fab fa-discord" />
 							</button>
 						</a>
 					</div>
-					<div className="col-md-6 ">
-						<Link to="/posts" className="logohomemain btn btn-danger cont font-para ">
+					<div className="col-md-6">
+						<Link to="/posts" className="margin-center btn container quicksand">
 							Suggest a movie
 						</Link>
 					</div>

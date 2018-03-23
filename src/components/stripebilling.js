@@ -18,7 +18,7 @@ class StripeBilling extends Component {
 				panelLabel="Pay Now!"
 				bitcoin
 			>
-				<button className="donate-btn">
+				<button className="btn--donate">
 					<img
 						src="https://new.innovatefinance.com/wp-content/uploads/2017/06/stripe_logo.png"
 						className="img-fluid"
