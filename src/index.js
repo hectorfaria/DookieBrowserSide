@@ -9,10 +9,10 @@ import promise from 'redux-promise';
 import Routes from './routes';
 import reduxThunk from 'redux-thunk';
 
-const createStoreWithMiddleware = applyMiddleware(reduxThunk, promise)(createStore);
+const store = createStore(reducers, applyMiddleware(reduxThunk, promise));
 
 ReactDOM.render(
-	<Provider store={createStoreWithMiddleware(reducers)}>
+	<Provider store={store}>
 		<Routes />
 	</Provider>,
 	document.getElementById('root'),

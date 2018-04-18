@@ -78,6 +78,9 @@ a:hover {
 .u-margin-up-5 {
   margin-top: 5%; }
 
+.scroll-y-hidden {
+  overflow-y: hidden; }
+
 .header {
   background-color: transparent;
   display: block;
@@ -199,6 +202,125 @@ a:hover {
       margin-top: 7%; } }
   .container--para {
     font-size: 1.2rem; }
+
+.chat-box {
+  height: 100vh;
+  padding: 0;
+  margin: 0; }
+  .chat-box__title-cont {
+    padding-top: 7rem;
+    padding-bottom: 1rem;
+    background-color: brown;
+    border: 3px solid white;
+    width: 100%; }
+    .chat-box__title-cont h1 {
+      color: white;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+      font-size: 2rem; }
+  .chat-box__boxlist {
+    border: 3px solid white;
+    overflow: hidden;
+    text-align: left;
+    height: 75vh;
+    padding: 3rem;
+    overflow-wrap: break-word;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0.4)), url("https://i.imgur.com/tPuh8Xo.jpg");
+    background-size: cover;
+    margin: auto;
+    display: block; }
+    .chat-box__boxlist:hover {
+      overflow-y: scroll; }
+  .chat-box__form {
+    position: fixed;
+    bottom: 0;
+    width: 24vw;
+    padding: 5px;
+    border: 1px solid white;
+    background-color: brown; }
+  .chat-box__input {
+    font-size: 2rem;
+    font-family: 'Quicksand', cursive;
+    border-radius: 3px;
+    border-bottom: 3px solid transparent;
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    color: white;
+    border: none; }
+    .chat-box__input:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rbga(black, 0.4);
+      border-bottom: 3px solid white;
+      font-size: 1.8rem; }
+    .chat-box__input::-webkit-input-placeholder {
+      color: white; }
+  .chat-box__message {
+    margin: 4px;
+    margin-left: 15px;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: auto;
+    background: radial-gradient(#d6c059 15%, transparent 16%) 0 0, radial-gradient(#d6c059 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+    background-color: #f8e796;
+    background-size: 16px 16px;
+    z-index: 3;
+    border-radius: 1rem;
+    padding: 5px;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem; }
+    .chat-box__message:after {
+      content: ' ';
+      position: absolute;
+      width: 0;
+      height: 0;
+      left: -20px;
+      right: auto;
+      top: 0px;
+      z-index: -1;
+      bottom: auto;
+      border: 20px solid;
+      border-color: #f8e796 transparent transparent transparent; }
+
+.video-js {
+  color: white;
+  font-size: 1.6rem !important;
+  width: 102% !important;
+  height: 100vh; }
+
+.vjs-default-skin .vjs-big-play-button {
+  font-size: 0 !important; }
+
+.video-js .vjs-control-bar,
+.video-js .vjs-big-play-button,
+.video-js .vjs-menu-button .vjs-menu-content {
+  background-color: brown !important;
+  height: 5rem !important;
+  border: 3px solid white !important; }
+
+.video-js .vjs-play-progress,
+.video-js .vjs-load-progress,
+.video-js .vjs-load-progress div,
+.video-js .vjs-progress-control,
+.video-js .vjs-progress-holder,
+.vjs-play-progress .vjs-slider-bar,
+.vjs-remaining-time-display {
+  color: transparent !important;
+  background-color: transparent !important;
+  width: 0 !important;
+  height: 0 !important;
+  opacity: 0 !important; }
+  .video-js .vjs-play-progress::before,
+  .video-js .vjs-load-progress::before,
+  .video-js .vjs-load-progress div::before,
+  .video-js .vjs-progress-control::before,
+  .video-js .vjs-progress-holder::before,
+  .vjs-play-progress .vjs-slider-bar::before,
+  .vjs-remaining-time-display::before {
+    color: transparent !important;
+    background-color: transparent !important;
+    width: 0 !important;
+    height: 0 !important; }
 
 .home-background {
   background: url("https://i.pinimg.com/originals/ee/ff/fb/eefffbe591a0d424e6580c35ac480c1d.jpg");

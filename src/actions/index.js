@@ -1,7 +1,6 @@
 /*eslint-disable no-unused-vars*/
 import axios from 'axios';
 import { FETCH_URL, API_KEY, MOVIE_KEY } from '../config/keys';
-
 export const FETCH_POSTS = 'fetch_posts';
 export const CREATE_POSTS = 'create_posts';
 export const FETCH_POSTS2 = 'fetch_post';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import StripeBilling from '../components/StripeBilling';
+import StripeBilling from '../components/stripebilling';
 import { connect } from 'react-redux';
 
 class DonatePage extends Component {
