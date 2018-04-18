@@ -1,10 +1,10 @@
 const Pusher = require('pusher');
-
+const keys = require('../src/config/keys');
 module.exports = (app) => {
 	const pusher = new Pusher({
-		appId: '503592',
-		key: 'bda65458b292dc4b4f5d',
-		secret: '0dc1e11f0370fda06ce5',
+		appId: keys.appIdPusher,
+		key: keys.keyPusher,
+		secret: keys.secretPusher,
 		cluster: 'us2',
 		encrypted: true,
 	});
